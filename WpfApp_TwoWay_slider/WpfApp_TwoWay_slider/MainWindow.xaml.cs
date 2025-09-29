@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp_TwoWay_slider.viewModel;
 
 namespace WpfApp_TwoWay_slider
 {
@@ -19,6 +20,7 @@ namespace WpfApp_TwoWay_slider
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new viewModel.Slider();
         }
     }
 }

@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WpfApp_TwoWay_slider"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <Slider Value="{Binding S,UpdateSourceTrigger=PropertyChanged}" Minimum="0" Maximum="100">
+        </Slider>
+        <TextBox Text="{Binding S, UpdateSourceTrigger=PropertyChanged}"/>
+    </StackPanel>
 </Window>
