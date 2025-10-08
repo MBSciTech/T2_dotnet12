@@ -1,0 +1,69 @@
+﻿<Window x:Class="WpfApp_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Height="340" Width="200" Margin="20" Background="AliceBlue">
+            <Label
+                Name="Display"
+                Height="60"
+                Width="190"
+                Margin="0 10 0 10"
+                Content=""
+                FontSize="21"
+                Background="Wheat"
+                />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="AC" Content="AC" FontSize="21" Grid.Row="0" Grid.Column="0" Margin="5" Click="AC_Click" ></Button>
+                <Button x:Name="modulo" Content="%" FontSize="21" Grid.Row="0" Grid.Column="1" Margin="5" Click="modulo_Click"></Button>
+                <Button x:Name="plusminus" Content="+/-" FontSize="21" Grid.Row="0" Grid.Column="2" Margin="5" Click="plusminus_Click"></Button>
+                <Button x:Name="div" Content="/" FontSize="21" Grid.Row="0" Grid.Column="3" Margin="5" Click="div_Click"></Button>
+
+                <Button x:Name="Seven" Content="7" FontSize="21" Grid.Row="1" Grid.Column="0" Margin="5" Click="Seven_Click"></Button>
+                <Button x:Name="Eight" Content="8" FontSize="21" Grid.Row="1" Grid.Column="1" Margin="5" Click="Eight_Click"></Button>
+                <Button x:Name="Nine" Content="9" FontSize="21" Grid.Row="1" Grid.Column="2" Margin="5" Click="Nine_Click"></Button>
+                <Button x:Name="mul" Content="*" FontSize="21" Grid.Row="1" Grid.Column="3" Margin="5" Click="mul_Click"></Button>
+
+                <Button x:Name="Four" Content="4" FontSize="21" Grid.Row="2" Grid.Column="0" Margin="5" Click="Four_Click"></Button>
+                <Button x:Name="Five" Content="5" FontSize="21" Grid.Row="2" Grid.Column="1" Margin="5" Click="Five_Click"></Button>
+                <Button x:Name="Six" Content="6" FontSize="21" Grid.Row="2" Grid.Column="2" Margin="5" Click="Six_Click"></Button>
+                <Button x:Name="min" Content="-" FontSize="21" Grid.Row="2" Grid.Column="3" Margin="5" Click="min_Click"></Button>
+
+                <Button x:Name="Three" Content="3" FontSize="21" Grid.Row="3" Grid.Column="0" Margin="5" Click="Three_Click"></Button>
+                <Button x:Name="Two" Content="2" FontSize="21" Grid.Row="3" Grid.Column="1" Margin="5" Click="Two_Click"></Button>
+                <Button x:Name="One" Content="1" FontSize="21" Grid.Row="3" Grid.Column="2" Margin="5" Click="One_Click"></Button>
+                <Button x:Name="add" Content="+" FontSize="21" Grid.Row="3" Grid.Column="3" Margin="5" Click="add_Click"></Button>
+
+                <Button x:Name="dot" Content="." FontSize="21" Grid.Row="4" Grid.Column="0" Margin="5" Click="dot_Click"></Button>
+                <Button x:Name="Zero" Content="0" FontSize="21" Grid.Row="4" Grid.Column="1" Margin="5" Click="Zero_Click"></Button>
+                <Button x:Name="eqa" Content="=" FontSize="21" Grid.Row="4" Grid.Column="2" Margin="5" Grid.ColumnSpan="2" Click="eqa_Click"></Button>
+
+
+
+
+
+
+
+            </Grid>
+        </StackPanel>
+    </StackPanel>
+</Window>
